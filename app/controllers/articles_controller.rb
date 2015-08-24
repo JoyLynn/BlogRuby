@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 		@article.save
 		redirect_to @article
 
-		@article = Article.new(params.require(:article).permit(:title, :text))
+		# @article = Article.new(params.require(:article).permit(:title, :text))
 
 	end
 
