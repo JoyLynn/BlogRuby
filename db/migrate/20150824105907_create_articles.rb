@@ -1,4 +1,5 @@
 class CreateArticles < ActiveRecord::Migration
+
   def change
     create_table :articles do |t|
       t.string :title
@@ -6,5 +7,7 @@ class CreateArticles < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+
   end
+  
 end
